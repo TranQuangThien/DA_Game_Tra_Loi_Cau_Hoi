@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F00F0F</color>
+    <color name="colorPrimaryDark">#522D82DD</color>
+    <color name="colorAccent">#F1D70C</color>
+    <color name="hind">#FFFFFF</color>
+    <color name="signup">#03A9F4</color>
+    <color name="facebook">#0E55C4</color>
+    <color name="quenmk">#E91E63</color>
+    <color name="phone">#0EC42C</color>
+</resources>

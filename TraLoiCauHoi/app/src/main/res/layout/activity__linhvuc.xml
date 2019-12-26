@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr"
+    android:layout_centerVertical="true"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txt_chonLinhVuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn Lĩnh Vực"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/hind"
+        android:background="@color/colorPrimary"/>
+<LinearLayout
+    android:id="@+id/ln_linhvuc"
+    android:layout_below="@id/txt_chonLinhVuc"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+    <Button
+        android:id="@+id/btn_linhvuc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Lĩnh vực 1"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_linhvuc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_linhvuc1"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Lĩnh vực 2"
+        android:background="@color/quenmk"/>
+    <Button
+        android:id="@+id/btn_linhvuc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_linhvuc2"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Lĩnh vực 1"
+        android:background="@color/phone"/>
+    <Button
+        android:id="@+id/btn_linhvuc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_linhvuc3"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Lĩnh vực 1"
+        android:background="@color/facebook"/>
+</LinearLayout>
+
+
+
+</RelativeLayout>

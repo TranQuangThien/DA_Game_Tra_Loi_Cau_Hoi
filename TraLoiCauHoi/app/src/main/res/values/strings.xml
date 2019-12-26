@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trả Lời Câu Hỏi</string>
+    <string name="facebook_app_id">587340385345759</string>
+    <string name="fb_login_protocol_scheme">fb587340385345759</string>
+</resources>

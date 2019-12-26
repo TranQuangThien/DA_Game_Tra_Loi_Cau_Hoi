@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_Main_Chinh"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgr"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/imageview_formMain_avt"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/avt_troll" />
+        <Button
+            android:id="@+id/btn_newgame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageview_formMain_avt"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:text="Trò Chơi Mới"
+            android:textColor="@color/hind"
+            android:textSize="24dp"
+            android:padding="15dp"
+            android:onClick="moLinhVuc"/>
+    <Button
+    android:id="@+id/btn_infomation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btn_newgame"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="70dp"
+    android:layout_centerHorizontal="true"
+    android:background="@color/phone"
+    android:textSize="24dp"
+    android:text="Thông Tin"
+    android:textColor="@color/hind"
+        android:padding="15dp"
+        android:onClick="openInfomation"/>
+    <Button
+        android:id="@+id/btn_lichsuchoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_infomation"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:textSize="24dp"
+        android:text="Xếp Hạng"
+        android:textColor="@color/hind"
+        android:padding="15dp"/>
+    <Button
+        android:id="@+id/btn_muacreadit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_lichsuchoi"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/quenmk"
+        android:textSize="24dp"
+        android:text="Mua Creadit"
+        android:textColor="@color/hind"
+        android:padding="15dp"
+        android:onClick="openMuacreadit"/>
+
+</RelativeLayout>
