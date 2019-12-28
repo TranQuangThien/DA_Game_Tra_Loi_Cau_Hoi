@@ -4,8 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,19 +34,20 @@ import com.facebook.login.LoginResult;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     EditText login_mail, login_pass, editText_formsignup_email,getEditText_formsignup_password;
     Button btn_LoginFB;
     CallbackManager callbackManager;
-
-    String[] email = {"quangthien@gmail.com","admin@gmail.com","hongthang@gmail.com","quoccuong@gmail.com","vancuong@gmail.com" };
-    String[] pass = {"quangthien123","admin123","hongthang123","quoccuong123","vancuong132"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         AnhXa();
 
         callbackManager = CallbackManager.Factory.create();
@@ -68,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+
+
     }
 
     private void AnhXa() {
@@ -83,44 +93,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     public void openLogin(View view) {
-        if(login_mail.getText().toString().equals("") || login_pass.getText().toString().equals(""))
-        {
-            Toast.makeText(this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
-        }
-        else if(login_mail.getText().toString().equals(email[0]) || login_pass.getText().toString().equals(pass[0]))
-        {
-            Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, activity_Main_Chinh.class);
-            startActivity(intent);
-        }
-        else if(login_mail.getText().toString().equals(email[1]) || login_pass.getText().toString().equals(pass[1]))
-        {
-            Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, activity_Main_Chinh.class);
-            startActivity(intent);
-        }
-        else if(login_mail.getText().toString().equals(email[2]) || login_pass.getText().toString().equals(pass[2]))
-        {
-            Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, activity_Main_Chinh.class);
-            startActivity(intent);
-        } else if(login_mail.getText().toString().equals(email[3]) || login_pass.getText().toString().equals(pass[3]))
-        {
-            Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, activity_Main_Chinh.class);
-            startActivity(intent);
-        }
-        else if(login_mail.getText().toString().equals(email[4]) || login_pass.getText().toString().equals(pass[4 ]))
-        {
-            Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, activity_Main_Chinh.class);
-            startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
-        }
+
     }
     public void signup_fb(View view) {
         LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));

@@ -37,11 +37,39 @@ public class activity_Main_Chinh extends AppCompatActivity {
        Dialog dialog = new Dialog(activity_Main_Chinh.this);
        dialog.setTitle("Chọn lĩnh vực");
        dialog.setCancelable(false);
-       dialog.setContentView(R.layout.activity__linhvuc);
+       dialog.setContentView(R.layout.activity_linh_vuc);
        dialog.show();
         Button btn_Linhvuc1 = (Button)dialog.findViewById(R.id.btn_linhvuc1);
         Button btn_Linhvuc2 = (Button)dialog.findViewById(R.id.btn_linhvuc2);
         Button btn_Linhvuc3 = (Button)dialog.findViewById(R.id.btn_linhvuc3);
         Button btn_Linhvuc4 = (Button)dialog.findViewById(R.id.btn_linhvuc4);
+        btn_Linhvuc1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_Main_Chinh.this, activity_Trochoi.class);
+                startActivity(intent);
+            }
+        });
+        btn_Linhvuc2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_Main_Chinh.this, activity_Trochoi.class);
+                startActivity(intent);
+            }
+        });
+        btn_Linhvuc3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_Main_Chinh.this, activity_Trochoi.class);
+                startActivity(intent);
+            }
+        });
+        btn_Linhvuc4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_Main_Chinh.this, activity_Trochoi.class);
+                startActivity(intent);
+            }
+        });
     }
 }
