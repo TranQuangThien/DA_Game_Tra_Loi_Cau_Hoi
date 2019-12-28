@@ -20,4 +20,8 @@ public class activity_Thong_Tin extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void doiavt(View view) {
+       
+    }
 }

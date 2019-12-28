@@ -11,18 +11,29 @@
         android:layout_height="match_parent"
         android:background="@drawable/bgr"
         android:orientation="horizontal"/>
-    <ImageView
+
+    <com.facebook.login.widget.ProfilePictureView
         android:id="@+id/imageview_formInfo_avt"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/avt_troll"/>
+        android:foreground="@drawable/avt_troll"
+        android:foregroundGravity="clip_horizontal|clip_vertical|fill" />
+    <TextView
+        android:id="@+id/doi_avt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_formInfo_avt"
+        android:text="Đổi Ảnh Đại Diện"
+        android:textColor="@color/hind"
+        android:gravity="center"
+        android:onClick="doiavt"/>
     <TextView
         android:id="@+id/txt_formInfo_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageview_formInfo_avt"
+        android:layout_below="@id/doi_avt"
         android:layout_marginTop="30dp"
         android:textSize="24dp"
         android:textColor="@color/hind"
