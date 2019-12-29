@@ -36,7 +36,6 @@ public class activity_Main_Chinh extends AppCompatActivity {
 
        Dialog dialog = new Dialog(activity_Main_Chinh.this);
        dialog.setTitle("Chọn lĩnh vực");
-       dialog.setCancelable(false);
        dialog.setContentView(R.layout.activity_linh_vuc);
        dialog.show();
         Button btn_Linhvuc1 = (Button)dialog.findViewById(R.id.btn_linhvuc1);
@@ -71,5 +70,18 @@ public class activity_Main_Chinh extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void openLichSuChoi(View view) {
+        Intent intent = new Intent(activity_Main_Chinh.this, Activity_LichSu.class);
+        startActivity(intent);
+
+    }
+
+    public void logout(View view) {
+
+        Intent intent = new Intent(activity_Main_Chinh.this, MainActivity.class);
+        startActivity(intent);
+
     }
 }

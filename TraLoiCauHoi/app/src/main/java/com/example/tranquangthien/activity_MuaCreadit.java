@@ -19,7 +19,7 @@ public class activity_MuaCreadit extends AppCompatActivity {
         btn_50k = (Button)findViewById(R.id.creadit_50k);
         btn_100k = (Button)findViewById(R.id.creadit_100k);
         btn_500k = (Button)findViewById(R.id.creadit_500k);
-        txt_soCraedit = (TextView)findViewById(R.id.txt_soCreadit);
+        txt_soCraedit = (TextView)findViewById(R.id.txt_Socreadit);
     }
 
     public void mua20k(View view) {

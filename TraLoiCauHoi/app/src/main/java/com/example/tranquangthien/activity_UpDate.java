@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class activity_UpDate extends AppCompatActivity {
-    String[] email = {"quangthien@gmail.com","admin@gmail.com","hongthang@gmail.com","quoccuong@gmail.com","vancuong@gmail.com" };
     EditText update_email,update_pass, update_rePass;
 
     @Override
@@ -33,35 +32,13 @@ public class activity_UpDate extends AppCompatActivity {
         {
             Toast.makeText(this,"nhập đầy đủ thông tin nhé", Toast.LENGTH_SHORT).show();
         }
-        else  if(update_email.getText().toString().equals(email[0]))
-        {
-            Toast.makeText(this,"tài khoản đã tồn tại", Toast.LENGTH_SHORT).show();
-        }
-        else  if(update_email.getText().toString().equals(email[1]))
-        {
-            Toast.makeText(this,"tài khoản đã tồn tại", Toast.LENGTH_SHORT).show();
-        }
-        else  if(update_email.getText().toString().equals(email[2]))
-        {
-            Toast.makeText(this,"tài khoản đã tồn tại", Toast.LENGTH_SHORT).show();
-        }
-        else  if(update_email.getText().toString().equals(email[3]))
-        {
-            Toast.makeText(this,"tài khoản đã tồn tại", Toast.LENGTH_SHORT).show();
-        }
-        else  if(update_email.getText().toString().equals(email[3]))
-        {
-            Toast.makeText(this,"tài khoản đã tồn tại", Toast.LENGTH_SHORT).show();
-        }
-        else if(update_rePass.getText() != update_pass.getText())
-        {
-            Toast.makeText(this,"mật khẩu không trùng nhau", Toast.LENGTH_SHORT).show();
-        }
+
         else
         {
-            Toast.makeText(this,"Đổi mật khẩu thành công", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this,MainActivity.class);
-            startActivity(intent);
+
+                Toast.makeText(this, "Đổi mật khẩu thành công", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
         }
     }
 }

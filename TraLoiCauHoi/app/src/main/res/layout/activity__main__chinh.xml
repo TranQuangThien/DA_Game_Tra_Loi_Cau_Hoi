@@ -60,7 +60,8 @@
         android:textSize="24dp"
         android:text="Xếp Hạng"
         android:textColor="@color/hind"
-        android:padding="15dp"/>
+        android:padding="15dp"
+        android:onClick="openLichSuChoi"/>
     <Button
         android:id="@+id/btn_muacreadit"
         android:layout_width="match_parent"
@@ -76,4 +77,18 @@
         android:padding="15dp"
         android:onClick="openMuacreadit"/>
 
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_muacreadit"
+        android:layout_marginTop="30dp"
+        android:text="LogOut"
+        android:textColor="@color/hind"
+        android:textSize="24dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@color/com_facebook_blue"
+        android:onClick="logout"/>
 </RelativeLayout>

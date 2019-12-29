@@ -61,7 +61,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_help_khagia"/>
+            android:src="@drawable/ic_help_khagia"
+            android:onClick="hoiKhanGia"/>
         <ImageView
             android:id="@+id/img_help_call_phone"
             android:layout_width="0dp"

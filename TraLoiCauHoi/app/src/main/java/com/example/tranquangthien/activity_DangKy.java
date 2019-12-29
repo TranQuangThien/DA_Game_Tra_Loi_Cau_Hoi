@@ -38,6 +38,8 @@ public class activity_DangKy extends AppCompatActivity {
         password.setText("");
         re_password.setText("");
         username.requestFocus();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
     }
 
@@ -54,7 +56,6 @@ public class activity_DangKy extends AppCompatActivity {
             Toast.makeText(this,"Đăng kí thành công",Toast.LENGTH_SHORT).show();
             login_email = username.getText().toString().trim();
             login_pass = password.getText().toString().trim();
-
             formlogin_email.setText(login_email);
             formlogin_password.setText(login_pass);
             Intent intent = new Intent(this, MainActivity.class);
