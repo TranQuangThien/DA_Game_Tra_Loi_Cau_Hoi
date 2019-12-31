@@ -19,7 +19,7 @@
             android:gravity="center"
             >
             <TextView
-                android:id="@+id/txt_money"
+                android:id="@+id/txt_diem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0đ"
@@ -107,7 +107,8 @@
         android:background="@drawable/ic_buton"
         android:text="Câu A"
         android:textColor="@color/hind"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:onClick="ChonDapAn"/>
     <Button
         android:id="@+id/btn_CauB"
         android:layout_width="match_parent"
