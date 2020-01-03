@@ -14,7 +14,7 @@ import java.net.URLConnection;
 public class DangNhapLoader extends AsyncTaskLoader {
 
     String data;
-    final String BASE_URL = "http://10.0.3.2:8000/api/dang-nhap";
+    final String BASE_URL = "http://127.0.0.1:8000/api/dang-nhap";
 
     public DangNhapLoader(@NonNull Context context, String data) {
         super(context);

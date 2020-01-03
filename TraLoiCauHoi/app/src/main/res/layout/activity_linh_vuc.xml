@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
-            android:text="Lĩnh vực 1"
+            android:text="Toán"
             android:background="@color/colorAccent" />
 
         <Button
@@ -42,7 +42,7 @@
             android:layout_marginTop="30dp"
 
             android:layout_centerHorizontal="true"
-            android:text="Lĩnh vực 2"
+            android:text="Văn"
             android:background="@color/quenmk"/>
         <Button
             android:id="@+id/btn_linhvuc3"
@@ -52,7 +52,7 @@
             android:layout_marginTop="30dp"
 
             android:layout_centerHorizontal="true"
-            android:text="Lĩnh vực 1"
+            android:text="Địa Lý"
             android:background="@color/phone"/>
         <Button
             android:id="@+id/btn_linhvuc4"
@@ -62,7 +62,7 @@
             android:layout_marginTop="30dp"
 
             android:layout_centerHorizontal="true"
-            android:text="Lĩnh vực 1"
+            android:text="Lịch Sử"
             android:background="@color/facebook"/>
     </LinearLayout>
 
