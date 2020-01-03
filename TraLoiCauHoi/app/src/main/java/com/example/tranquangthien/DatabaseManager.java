@@ -24,7 +24,7 @@ public class DatabaseManager {
         copyDB(context);
         openDB();
 }
-    public void get15Question(List<Question> questions) {
+    public void get15Question(List<NguoiChoiLoader.Question> questions) {
         Cursor cursor = mSqLiteDatabase.rawQuery(SQL_GET_15_QUESTION, null);
         if (cursor != null) {
             cursor.moveToFirst();
@@ -47,7 +47,7 @@ public class DatabaseManager {
                 caseD = cursor.getString(caseDIndex);
                 trueCase = Integer.parseInt(cursor.getString(trueCaseIndex));
 
-                Question qItem = new Question(question, level, caseA, caseB, caseC, caseD, trueCase);
+                NguoiChoiLoader.Question qItem = new NguoiChoiLoader.Question(question, level, caseA, caseB, caseC, caseD, trueCase);
 
                 questions.add(qItem);
 

@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:layout_centerVertical="true"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bgr">
 
 
     <LinearLayout
@@ -32,7 +33,8 @@
             android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
             android:text="Toán"
-            android:background="@color/colorAccent" />
+            android:background="@color/colorAccent"
+            android:onClick="batDauTroChoi"/>
 
         <Button
             android:id="@+id/btn_linhvuc2"
@@ -40,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_linhvuc1"
             android:layout_marginTop="30dp"
-
+            android:onClick="batDauTroChoi"
             android:layout_centerHorizontal="true"
             android:text="Văn"
             android:background="@color/quenmk"/>
@@ -50,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_linhvuc2"
             android:layout_marginTop="30dp"
-
+            android:onClick="batDauTroChoi"
             android:layout_centerHorizontal="true"
             android:text="Địa Lý"
             android:background="@color/phone"/>
@@ -60,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_linhvuc3"
             android:layout_marginTop="30dp"
-
+            android:onClick="batDauTroChoi"
             android:layout_centerHorizontal="true"
             android:text="Lịch Sử"
             android:background="@color/facebook"/>

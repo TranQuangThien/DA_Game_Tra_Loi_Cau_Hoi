@@ -135,10 +135,6 @@ public class activity_linh_vuc extends AppCompatActivity {
         }
     };
 
-//    public void HienThiManHinhTroChoi(View view) {
-//        Intent intent = new Intent(this,ManHinhTroChoi.class);
-//        startActivity(intent);
-//    }
 }
 class CauHoiLoader extends AsyncTaskLoader<String> {
     int id;
