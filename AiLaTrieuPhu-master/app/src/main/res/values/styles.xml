@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="editText_style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/editbackground</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@drawable/buttonstyle</item>
+    </style>
+
+    <style name="button_style_2">
+        <item name="android:background">@drawable/buttonstyle2</item>
+    </style>
+
+    <style name="button_style_3">
+        <item name="android:background">@drawable/buttonstyle3</item>
+    </style>
+
+    <style name="button_correct">
+        <item name="android:background">@drawable/buttonstyle4</item>
+    </style>
+
+    <style name="button_wrong">
+        <item name="android:background">@drawable/buttonstyle5</item>
+    </style>
+
+    <style name="button_first">
+        <item name="android:background">@drawable/buttonstyle6</item>
+    </style>
+
+    <style name="button_second">
+        <item name="android:background">@drawable/buttonstyle7</item>
+    </style>
+
+    <style name="button_third">
+        <item name="android:background">@drawable/buttonstyle8</item>
+    </style>
+</resources>

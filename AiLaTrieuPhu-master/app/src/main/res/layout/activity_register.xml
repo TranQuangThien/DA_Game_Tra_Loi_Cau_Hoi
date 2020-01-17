@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3C3C"
+    tools:context="com.example.ailatrieuphu.Register">
+
+    <Button
+        android:id="@+id/btnRegister"
+        style="@style/button_style"
+        android:layout_width="312dp"
+        android:layout_height="60sp"
+        android:layout_marginTop="24dp"
+        android:onClick="DangKy"
+        android:text="Đăng ký"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNhapLai" />
+
+    <EditText
+        android:id="@+id/txtMatKhau"
+        style="@style/editText_style"
+        android:layout_width="312dp"
+        android:layout_height="50sp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSuaTaiKhoan"
+        style="@style/editText_style"
+        android:layout_width="312dp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="24dp"
+        android:hint="Tên tài khoản"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        style="@style/editText_style"
+        android:layout_width="312dp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="24dp"
+        android:hint="Email"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMatKhau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNhapLai"
+        style="@style/editText_style"
+        android:layout_width="312dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="24dp"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMatKhau" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Tạo tài khoản"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSuaTaiKhoan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

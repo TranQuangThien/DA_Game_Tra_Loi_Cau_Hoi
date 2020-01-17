@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3C3C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTaiKhoan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <EditText
+        android:id="@+id/txtTaiKhoan"
+        style="@style/editText_style"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Tài khoản"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMatKhau"
+        style="@style/editText_style"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTaiKhoan" />
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        android:onClick="LaunchTrangChu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMatKhau" />
+
+    <TextView
+        android:id="@+id/Forget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Quên mật khẩu ?"
+        android:textColor="#FFFFFF"
+        android:onClick="LaunchForget"
+        app:layout_constraintBottom_toBottomOf="@+id/Register"
+        app:layout_constraintStart_toStartOf="@+id/btnDangNhap"
+        app:layout_constraintTop_toBottomOf="@+id/btnDangNhap" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="352dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTaiKhoan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Tạo tài khoản"
+        android:textColor="#FFFFFF"
+        android:onClick="LaunchRegister"
+        app:layout_constraintEnd_toEndOf="@+id/btnDangNhap"
+        app:layout_constraintTop_toBottomOf="@+id/btnDangNhap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
